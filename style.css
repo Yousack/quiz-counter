@@ -2,5 +2,10 @@ body {
   text-align: center;
 }
 #point {
-  font-size: xx-large;
+  font-size: 1000%;
+  font-weight: bold;
+}
+
+.btn-lg {
+  font-size: 500%;
 }
