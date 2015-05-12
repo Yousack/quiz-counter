@@ -24,12 +24,14 @@ function calc(status) {
 function o() {
     var oPoint = parseInt(document.getElementById("o").innerHTML);
     document.getElementById("o").innerHTML = oPoint + parseInt(1);
+    document.getElementById("history").innerHTML += '○';
     calc(1);
 }
 
 function x() {
     var xPoint = parseInt(document.getElementById("x").innerHTML);
     document.getElementById("x").innerHTML = xPoint + parseInt(1);
+    document.getElementById("history").innerHTML += '×';
     calc(0);
 }
 
@@ -37,6 +39,7 @@ function reset() {
     document.getElementById("point").innerHTML = 0;
     document.getElementById("o").innerHTML = 0;
     document.getElementById("x").innerHTML = 0;
+    document.getElementById("history").innerHTML = '履歴：';
 
     var e = document.getElementById("rule");
     var rule = e.options[e.selectedIndex].value;
